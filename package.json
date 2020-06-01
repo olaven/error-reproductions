@@ -1,0 +1,30 @@
+{
+  "name": "typeorm-nextjs-error",
+  "version": "1.0.0",
+  "description": "Reproduction of error",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.4.4",
+    "pg": "^8.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reflect-metadata": "^0.1.13",
+    "standard": "^14.3.4",
+    "typeorm": "^0.2.25"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-decorators": "^7.10.1",
+    "@types/node": "^14.0.6",
+    "@types/react": "^16.9.35",
+    "babel-plugin-transform-typescript-metadata": "^0.3.0",
+    "typescript": "^3.9.3"
+  }
+}

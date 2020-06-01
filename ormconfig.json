@@ -1,0 +1,14 @@
+{
+    "name": "default",
+    "type": "postgres",
+    "host": "localhost",
+    "username": "postgres",
+    "password": "postgres",
+    "database": "local",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+        "./database/MyEntity.ts"
+    ],
+    "dropSchema": true
+}

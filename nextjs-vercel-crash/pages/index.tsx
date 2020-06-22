@@ -1,21 +1,28 @@
 // <3 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
 
-    const [value, setValue] = useState(null);
-    const fetchEndpoint = async () => {
+    const [user, setUser] = useState(null);
 
-        const response = await fetch('/api/endpoint');
+    const fetchUser = async () => {
+
+        const response = await fetch("/api/auth/me");
+        console.log(response);
         if (response.status === 200) {
 
-            const value = await response.text();
-            setValue(value);
+            const user = await response.json();
+            setUser(user);
         }
+
     }
+    useEffect(() => { fetchUser }, []);
+
     return <>
-        <button onClick={fetchEndpoint}>fetch todo from JSONPlaceholder</button>
-        <div>{value ? `fetched todo '${value}'` : ''}</div>
+        <a href="/api/auth/login">login</a>
+        {user && <div>
+            Logged in as: {user.name}
+        </div>}
     </>
 }
 

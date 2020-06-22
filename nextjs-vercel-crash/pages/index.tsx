@@ -13,8 +13,8 @@ const Index = () => {
         }
     }
     return <>
-        <button onClick={fetchEndpoint}>fetch endpoint</button>
-        <div>{value ? `fetched value '${value}'` : ''}</div>
+        <button onClick={fetchEndpoint}>fetch todo from JSONPlaceholder</button>
+        <div>{value ? `fetched todo '${value}'` : ''}</div>
     </>
 }
 

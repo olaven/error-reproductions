@@ -16,7 +16,7 @@ const Index = () => {
         }
 
     }
-    useEffect(() => { fetchUser }, []);
+    useEffect(() => { fetchUser() }, []);
 
     return <>
         <a href="/api/auth/login">login</a>

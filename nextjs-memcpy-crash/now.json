@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": "memcpy-crash",
+    "name": "memcpy-crash",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/next",
+            "config": {
+                "maxLambdaSize": "15mb"
+            }
+        }
+    ],
+    "build": {}
+}
